@@ -43,16 +43,16 @@ document.addEventListener("click", function (e) {
   }
 });
 
-const itemDetailModal = document.querySelector(".modal");
 const itemDetailButtons = document.querySelectorAll(".item-detail-button");
+const itemDetailModal = document.querySelector(".modal");
 
 itemDetailButtons.forEach((btn) => {
   btn.onclick = (e) => {
     itemDetailModal.style.display = "flex";
     e.preventDefault();
+    alert("tombol detail");
   };
 });
-
 document.querySelector(".close-icon").onclick = (e) => {
   itemDetailModal.style.display = "none";
   e.preventDefault();
